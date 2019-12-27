@@ -25,7 +25,7 @@
             11.RWD:
                 (1)320px會跑版，360Px不會，media設359px以下
                 (2)SCSS階層要寫很清楚:
-                 例:SCSS的.name要寫在body、.card、.imgName{}裡面，.name的屬性才會被讀取，不能省略上面3個父層   
+                 例:SCSS的.name要寫在.imgName{}裡面，.name的屬性才會被讀取，不能省略.imgName{}   
          */
 body {
   height: 100vh;
@@ -79,7 +79,7 @@ body .card .songName .text {
   padding: 5px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 600px) {
   body .card .imgName .name {
     font-size: 52px;
   }
