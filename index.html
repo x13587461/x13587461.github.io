@@ -6,77 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        /* 此練習用了:
-            前4點須配名片限制一起看
-            1.padding
-            2.font-size
-            3.flex:
-              父層用flex，子層margin:auto可水平垂直置中
-              例:body跟imgName，子層card跟name
-              flex在父元素imgName，子元素照片跟名子才能同一行
-            4.line-hight、letter-spacing
-            5.不可限制高度-> 由內容撐出高度，Body高為卡片高度，要設100vh，卡片才能垂直置中
-            6.卡片跟照片和框線4個角有border-radius
-            7.切版:
-              Card Div包上下2個Div
-              上Div包Img跟名子2個Div
-              下包電話跟地址2個Div
-            8.可改字體，例如下面Body屬性，沒有微軟正黑體會選擇,後方的字體代替
-            body {
-            font-family: "微軟正黑體" ,'Noto Sans TC', sans-serif;
-            }
-            9.卡片加陰影
-            10.上下2個Div會在中間有重複框線:
-               可設上Div border-bootom為0或
-               songName此Div border-top為0 
-         */
-        body {
-            height: 100vh;
-            display: flex;
-        }
-
-        .card {
-            width: 500px;
-            background-color: rgb(241, 199, 184);
-            padding: 20px;
-            /* 此為限制1. */
-            border-radius: 10px;
-            box-shadow: slategray 0px 0px 5px;
-            margin: auto;
-        }
-
-        .imgName {
-            display: flex;
-            /* flex 在父元素imgName，子元素照片跟名子才能同一行 */
-            border: 1px solid white;
-            border-radius: 10px 10px 0 0;
-        }
-
-        img {
-            width: 100px;
-            border-radius: 10px;
-            margin: 10px;
-        }
-        .name {
-            margin: auto;
-            font-size: 60px;
-            letter-spacing: 19px;
-        }
-
-        .songName {
-            border: solid 1px white;
-            border-radius: 0 0 10px 10px;
-            border-top: 0;
-        }
-
-        .text {
-            font-size: 28px;
-            line-height: 40px;
-            letter-spacing: 1px;
-            padding: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="/x13587461.github.io/CSS/style.css">
 </head>
 
 <body>
