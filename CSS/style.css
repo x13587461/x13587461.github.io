@@ -25,7 +25,9 @@
             11.RWD:
                 (1)320px會跑版，360Px不會，media設359px以下
                 (2)SCSS階層要寫很清楚:
-                 例:SCSS的.name要寫在.imgName{}裡面，.name的屬性才會被讀取，不能省略.imgName{}   
+                 例:SCSS的.name要寫在.imgName{}裡面，.name的屬性才會被讀取，不能省略.imgName{}
+                (3)F12檢查模擬手機檢視部會跑版，但是實際手機圖片會跑版(iphone跟Samsung Galaxy C9 Pro)，Sugar P1不會跑版
+                   -> 寬度改為%測試    
          */
 body {
   height: 100vh;
@@ -80,8 +82,11 @@ body .card .songName .text {
 }
 
 @media (max-width: 600px) {
+  body .card {
+    width: 80%;
+  }
   body .card .imgName .name {
-    font-size: 52px;
+    font-size: 41px;
   }
 }
 /*# sourceMappingURL=style.css.map */
