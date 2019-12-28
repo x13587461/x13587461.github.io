@@ -21,7 +21,8 @@
             10.上下2個Div會在中間有重複框線:
                可設上Div border-bootom為0或
                songName此Div border-top為0
-            11.RWD:
+            11.text裡面加入超連結      
+            12.RWD:
                 (1)320px會跑版，360Px不會，media設359px以下
                 (2)SCSS階層要寫很清楚:
                  例:SCSS的.name要寫在.imgName{}裡面，.name的屬性才會被讀取，不能省略.imgName{}
