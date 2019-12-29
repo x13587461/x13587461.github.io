@@ -10,6 +10,8 @@
             4.line-hight、letter-spacing
             5.不可限制高度-> 由內容撐出高度，Body高為卡片高度，要設100vh，卡片才能垂直置中
             6.卡片跟照片和框線4個角有border-radius
+              <img src="./img/Whitney.jpg">
+                         /前面加.在某些瀏覽器例如IE才能開啟
             7.切版:
               Card Div包上下2個Div
               上Div包Img跟名子2個Div
